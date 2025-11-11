@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="main_rin.css">
+        <script type="text/javascript" src="web_shop_logic_rin.js"></script>
+        <meta charset="UTF-8">
+        <title>Frog Pond Shop!</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+        <link rel="manifest" href="Images/site.webmanifest">
+    </head>
+    <body>
+
+        <header class="header">
+            <h1 style="position: relative; left: 1vw;">Frog Pond Shop!</h1>
+            <button class="header-button" id="header-button" onclick="window.location.href='your_pond.html'" >Your Pond!</button>
+            <img class="stone" src="Images/wssssssstone3.png" height="60vw" width="60vw"  alt="stone"/>
+            <h1 class="money" id="money">Moneys</h1>
+        </header>
+
+        <div class="item-holder">
+          <div class="dual-wielding">
+           <div class="item">
+               <div class="image-holder">
+                   <img class="img1"  src="Images/flag_sharWebsite.png" height="240vw" width="240vw" alt="flag"/>
+               </div>
+               <div class="item-info-holder">
+                   <div>
+                       <h2 class="item-title"> Bandana flag</h2>
+                       <p class="item-stock" id="flag-stock">Stock: </p>
+                       <p class="item-price" id="flag-price">Price: </p>
+                   </div>
+                   <div>
+                       <button class="buy-button" onclick="buyProduct1('bandana')">Add to cart</button>
+                   </div>
+               </div>
+           </div>
+
+            <div class="item">
+                <div class="image-holder">
+                    <img class="img1" src="Images/Clover_sharWebsite.png" height="240vw" width="240vw" alt="clover"/>
+                </div>
+                <div class="item-info-holder">
+                    <div>
+                        <h2 class="item-title">Clover patch</h2>
+                        <p class="item-stock" id="clover-stock">Stock: </p>
+                        <p class="item-price" id="clover-price">Price: </p>
+                    </div>
+                    <div>
+                        <button class="buy-button" onclick="buyProduct2('clover')">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+          </div>
+            <div class="dual-wielding">
+             <div class="item">
+                 <div class="image-holder">
+                     <img class="img2" src="Images/award_sharWebsite.png" height="240vw" width="240 vw" alt="star"/>
+                 </div>
+                 <div class="item-info-holder">
+                     <div>
+                         <h2 class="item-title">Star award</h2>
+                         <p class="item-stock" id="star-stock">Stock: </p>
+                         <p class="item-price" id="star-price">Price: </p>
+                     </div>
+                     <div>
+                         <button class="buy-button" onclick="buyProduct3('star')">Add to cart</button>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="item">
+                 <div class="image-holder">
+                     <img class="img2" src="Images/boot_sharWebsite.png" height="240vw" width="240vw" alt="boot"/></div>
+                 <div class="item-info-holder">
+                     <div>
+                         <h2 class="item-title">Cowboy boot</h2>
+                         <p class="item-stock" id="boot-stock">Stock: </p>
+                         <p class="item-price" id="boot-price">Price: </p>
+                     </div>
+                     <div>
+                         <button class="buy-button" onclick="buyProduct4('boot')">Add to cart</button>
+                     </div>
+                 </div>
+             </div>
+            </div>
+
+        </div>
+
+        <div class="wall" id="pop-up">
+            <div class="pop-up">
+                <h1 style="position: relative; left:2vw;">Starloaf! wants to visit your pond :0c</h1>
+                <img style="position: relative; bottom: 4vw;" src="Images/starloaf_sharWebsite.png" height="300vw" width="300vw" alt="froggo"/>
+                <button class="okay-button" onclick="okayButton()">Okay!</button>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2 class="item-title">Cart</h2>
+            <p  class="checkout-text" id="cart-text"></p>
+            <p  class="checkout-text" id="cart-text2"></p>
+            <p  class="checkout-text" id="cart-text3"></p>
+            <p  class="checkout-text" id="cart-text4"></p>
+            <p  class="checkout-text">_______________________________ +</p>
+            <p  class="checkout-text" id="total-price">ShinyStones</p>
+            <button class="purchase-button" id="purchase-button" onclick="purchase()">Purchase</button>
+        </div>
+
+        <footer class="footer">
+            <p style="position: relative; left: 1vw;">
+                This website is themed and stylized after a
+                desktop-pet game - "Frog Pond" made by Shar @ https://www.youtube.com/@shar ;
+            UX and UI by me ; Items + Frog: design + art by me <br> (tho heavily inspired by uty) ;
+                base Pond design by Shar
+            </p>
+        </footer>
+    </body>
+</html>
